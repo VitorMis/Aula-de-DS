@@ -1,0 +1,29 @@
+package com.company;
+
+import javax.sound.midi.Soundbank;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+   Produto Coquinha = new Produto();
+   Produto Pepsi = new Produto();
+   Produto paozinho = new Produto();
+        Coquinha.setDescricao("Coquinha");
+        Coquinha.setValor(10);
+        Coquinha.setIdProduto(4090);
+        System.out.println("--------");
+        Pepsi.setDescricao("Pepsinha Gostosinha iami iami");
+        Pepsi.setValor(8);
+        Pepsi.setIdProduto(6767);
+        System.out.println("--------");
+        paozinho.setDescricao("pão");
+        paozinho.setValor(4);
+        paozinho.setIdProduto(4545);
+        Coquinha.listarprodutos();
+        System.out.println("---------");
+        Pepsi.listarprodutos();
+        System.out.println("---------");
+        paozinho.listarprodutos();
+        
