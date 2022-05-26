@@ -1,0 +1,59 @@
+package com.company;
+
+public class Produto {
+   private int  idProduto;
+   private String descricao;
+   private double valor;
+   private int saldo;
+   private int Quanti;
+
+    public int getIdProduto() {
+        return idProduto;
+    }
+
+    public void setIdProduto(int idProduto) {
+        this.idProduto = idProduto;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+    public int registrarEntrada() {
+        return saldo + idProduto;
+    }
+    public int registrarSaida(){
+        return saldo - idProduto;
+    }
+
+    public int getQuanti() {
+        return Quanti;
+    }
+
+    public void setQuanti(int quanti) {
+        Quanti = quanti;
+    }
+
+
+
+    public void listarprodutos() {
+        System.out.println("descricao = " + descricao);
+        System.out.println("valor = " + valor);
+        System.out.println("idProduto = " + idProduto);
+
+
+    }
+
+
+
